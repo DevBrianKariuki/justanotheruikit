@@ -3,7 +3,7 @@ import { About, Contact, Footer, Hero, Navbar, Supported } from "./components";
 
 const App = () => {
   return (
-    <div className="w-full h-screen bg-background px-6 md:px-16">
+    <div className="w-full h-[100%] bg-background px-6 md:px-16">
       <Navbar />
       <Hero />
       <Supported />
