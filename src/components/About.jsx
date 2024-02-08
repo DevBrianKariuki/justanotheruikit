@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="w-full mt-32 flex flex-col gap-5 items-center justify-center font-inter">
-      <h1 className="text-white text-3xl font-bold">About</h1>
-      <p className="text-neutral-300 sm:w-[75%] text-sm font-light text-center">
+      <h1
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+        className="text-white text-3xl font-bold"
+      >
+        About
+      </h1>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="text-neutral-300 sm:w-[75%] text-sm font-light text-center"
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet
         consectetur adipiscing elit pellentesque habitant. Cras pulvinar mattis
